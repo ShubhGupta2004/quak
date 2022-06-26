@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/shubh/AndroidStudioProjects/quak/app/src/main/res/drawable/eart.xml" value="0.17395833333333333" />
         <entry key="..\:/Users/shubh/AndroidStudioProjects/quak/app/src/main/res/drawable/mag_circle.xml" value="0.17395833333333333" />
         <entry key="..\:/Users/shubh/AndroidStudioProjects/quak/app/src/main/res/drawable/shape_corner.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/shubh/AndroidStudioProjects/quak/app/src/main/res/layout/activity_main.xml" value="0.30583058305830585" />
         <entry key="..\:/Users/shubh/AndroidStudioProjects/quak/app/src/main/res/layout/activity_main_for_list.xml" value="0.1" />
         <entry key="..\:/Users/shubh/AndroidStudioProjects/quak/app/src/main/res/layout/activity_main_for_pages.xml" value="0.1578125" />
-        <entry key="..\:/Users/shubh/AndroidStudioProjects/quak/app/src/main/res/layout/list_for_adapter.xml" value="0.5" />
+        <entry key="..\:/Users/shubh/AndroidStudioProjects/quak/app/src/main/res/layout/list_for_adapter.xml" value="0.315625" />
       </map>
     </option>
   </component>

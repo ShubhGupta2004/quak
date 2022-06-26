@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">quak</string>
+    <string name="app_name">Quack-Quack</string>
     <string name="_12">12.8</string>
     <string name="_27_may_2022">27 May 2022</string>
     <string name="shubh_gupta">990KM N of</string>
     <string name="total_chile">Total,Chile</string>
     <string name="_03_00_pm">03:00 PM</string>
     <string name="start_of_the_activity">Start of The Activity</string>
+    <string name="s">S</string>
+    <string name="welcome">Welcome</string>
 </resources>
