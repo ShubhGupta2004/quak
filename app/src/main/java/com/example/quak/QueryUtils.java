@@ -93,8 +93,11 @@ public final class QueryUtils {
                 DecimalFormat decimalFormat = new DecimalFormat("0.0");
                 m=decimalFormat.format(mag);
 
+                //url decription
+                String url = obj3.getString("url");
 
-                earthquakes.add(new earthQuakeData(s1,s2,m,s3,s4));
+
+                earthquakes.add(new earthQuakeData(s1,s2,m,s3,s4,url));
 
             }
 
