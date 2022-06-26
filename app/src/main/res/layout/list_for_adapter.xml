@@ -13,12 +13,12 @@
         <TextView
             android:id="@+id/magnitude"
             android:layout_width="wrap_content"
-
+            android:padding="7dp"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-
+           android:layout_margin="4dp"
+            android:gravity="center"
             android:background="@drawable/mag_circle"
-            android:padding="1dp"
+
             android:text="@string/_12"
             android:textSize="19sp"
             android:textStyle="bold"
@@ -55,23 +55,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_gravity="end">
 
             <TextView
                 android:id="@+id/dateOfIncident"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_gravity="end"
+
                 android:padding="5dp"
-                android:text="@string/_27_may_2022"
-                android:textStyle="bold" />
+                android:text="@string/_27_may_2022" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="end"
                 android:id="@+id/timeOfIncident"
-                android:text="03:00 PM"
-                android:layout_weight="1"
-                android:textStyle="bold"
+                android:text="@string/_03_00_pm"
+
+
                 android:padding="4dp"
                 />
         </LinearLayout>
