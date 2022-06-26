@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         earthquakes.add(new earthQuakeData("san fransisco","7.05","27"));
         earthquakes.add(new earthQuakeData("san fransisco","7.40","27"));
         earthquakes.add(new earthQuakeData("san fransisco","74.04","27"));
+        //
         earthquakes.add(new earthQuakeData("san fransisco","7.340","27"));
         earthquakes.add(new earthQuakeData("san fransisco","7.30","27"));
         earthquakes.add(new earthQuakeData("san fransisco","7.30","27"));
