@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,34 +12,74 @@
 
         <TextView
             android:id="@+id/magnitude"
-
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:padding="5dp"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:background="@drawable/mag_circle"
+            android:padding="1dp"
             android:text="@string/_12"
-            android:textStyle="bold" />
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
 
-        <TextView
-            android:id="@+id/location"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_weight="1"
-            android:padding="5dp"
-            android:text="@string/shubh_gupta"
-            android:textStyle="bold" />
+            android:layout_margin="7dp">
 
-        <TextView
-            android:id="@+id/dateOfIncident"
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="@string/shubh_gupta" />
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_chile"
+                android:textStyle="bold"
+
+                android:layout_weight="2"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:text="@string/_27_may_2022"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
 
-
+            <TextView
+                android:id="@+id/dateOfIncident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="@string/_27_may_2022"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timeOfIncident"
+                android:text="03:00 PM"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:padding="4dp"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

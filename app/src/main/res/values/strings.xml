@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">quak</string>
-    <string name="_12">12</string>
+    <string name="_12">12.8</string>
     <string name="_27_may_2022">27 May 2022</string>
-    <string name="shubh_gupta">Shubh Gupta</string>
+    <string name="shubh_gupta">990KM N of</string>
+    <string name="total_chile">Total,Chile</string>
 </resources>
