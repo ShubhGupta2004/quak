@@ -23,7 +23,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class MainActivityForPages extends AppCompatActivity {
-    public static final String LOG_TAG = MainActivity.class.getName();
+    //public static final String LOG_TAG = MainActivity.class.getName();
+    public static final String url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2016-01-01&endtime=2016-01-31&minmag=6&limit=10";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,32 +33,32 @@ public class MainActivityForPages extends AppCompatActivity {
 
         // Create a fake list of earthquake locations.
         final String[] s1 = new String[1];
-        RequestQueue requestQueue;
-        requestQueue = Volley.newRequestQueue(this);
-        Log.d("eror","before");
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,"https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2016-01-01&endtime=2016-01-31&minmag=6&limit=10",null, new Response.Listener<JSONObject>() {
+        RequestQueue requestQueue = Volley.newRequestQueue(MainActivityForPages.this);
+        Log.d("eror","before "+url);
 
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
+                    Log.d("eror",url);
                     String s = response.toString();
-                    Log.d("eror",s);
+                    Log.d("eror"," l "+s);
                     System.out.println("hello");
                     s1[0] =s;
                 }catch (Exception e){
-                    Log.d("eror",e.getMessage());
+                    Log.d("eror"," l "+e.getMessage());
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("eror",error.getMessage());
+                Log.d("eror","n : "+error.getMessage());
             }
         });
         Log.d("eror","after");
         requestQueue.add(jsonObjectRequest);
-
+        Log.d("eror","afterr"+s1[0]);
         ArrayList<earthQuakeData> earthquakes = QueryUtils.extractEarthquakes(s1[0]);
 
 
